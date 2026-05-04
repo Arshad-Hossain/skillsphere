@@ -3,19 +3,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-// import { Avatar, Button } from "@heroui/react";
-// import { authClient } from "@/lib/auth-client";
-// import { useRouter } from "next/navigation";
+import { Avatar, Button } from "@heroui/react";
+import { authClient } from "@/lib/auth-client";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
-  // const router = useRouter();
-  // const userData = authClient.useSession();
-  // const user = userData.data?.user;
+  const router = useRouter();
+  const userData = authClient.useSession();
+  const user = userData.data?.user;
 
-  // const handleLogout = async () => {
-  //   await authClient.signOut();
-  //   router.push("/courses");
-  // };
+  const handleLogout = async () => {
+    await authClient.signOut();
+    router.push("/courses");
+  };
   return (
     <div className="border-b px-2 mb-5">
       <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
@@ -44,7 +44,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* <div className="flex gap-4">
+        <div className="flex gap-4">
           {!user && (
             <ul className="flex items-center  text-sm gap-5">
               <li>
@@ -69,7 +69,7 @@ const Navbar = () => {
               </Button>
             </div>
           )}
-        </div> */}
+        </div>
 
         {/* <div>
           <ul>
