@@ -1,5 +1,8 @@
 import Banner from "@/components/Banner";
+import LearningTips from "@/components/LearningTips";
 import PopularCourses from "@/components/PopularCourses";
+import TopInstructors from "@/components/TopInstructors";
+import TrendingCourses from "@/components/TrendingCourses";
 import { Suspense } from "react";
 
 export default function Home() {
@@ -11,6 +14,9 @@ export default function Home() {
       >
         <PopularCourses></PopularCourses>
       </Suspense>
+      <LearningTips></LearningTips>
+      <TopInstructors></TopInstructors>
+      <TrendingCourses></TrendingCourses>
     </div>
   );
 }
