@@ -3,10 +3,11 @@ import PopularCourses from "@/components/PopularCourses";
 import Image from "next/image";
 
 export default function Home() {
-  return;
-  <div>
-    <Banner></Banner>
+  return (
+    <div>
+      <Banner></Banner>
 
-    <PopularCourses></PopularCourses>
-  </div>;
+      <PopularCourses></PopularCourses>
+    </div>
+  );
 }
