@@ -4,7 +4,7 @@
 
 ## 🌐 Live Demo
 
-👉 https://category-a8-orange.vercel.app/
+👉 https://skillsphere-omega.vercel.app/
 
 ---
 
