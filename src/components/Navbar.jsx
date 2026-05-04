@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Avatar, Button } from "@heroui/react";
+// import { Avatar, Button } from "@heroui/react";
 // import { authClient } from "@/lib/auth-client";
 // import { useRouter } from "next/navigation";
 
@@ -69,14 +69,6 @@ const Navbar = () => {
               </Button>
             </div>
           )}
-        </div> */}
-
-        {/* <div>
-          <ul>
-            <li>
-              <Link href={"/login"}>Login</Link>
-            </li>
-          </ul>
         </div> */}
       </nav>
     </div>
