@@ -3,26 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-// import { Avatar, Button } from "@heroui/react";
-// import { authClient } from "@/lib/auth-client";
-// import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   return (
     <div className="border-b px-2 mb-5">
-      <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
-        <div className="flex gap-2 items-center">
-          <Image
-            src={"/logo.jpg"}
-            alt="logo"
-            loading="eager"
-            width={30}
-            height={30}
-            className="object-cover h-auto w-auto"
-          />
-          <h3 className="font-black text-lg">SkillSphere</h3>
-        </div>
-
+      <nav>
         <ul className="flex items-center gap-5 text-sm">
           <li>
             <Link href={"/"}>Home</Link>
